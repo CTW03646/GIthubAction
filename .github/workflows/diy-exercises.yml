@@ -42,7 +42,9 @@ jobs:
         with:
           directory: 02_devops_fundamentals/ci_cd/terraform-exercise-3a/
           soft_fail: true # optional: do not return an error code if there are failed checks
-  run-py-test:
-    run-on: self-hosted
+  
+  py-test:
+    runs-on: self-hosted
     steps:
-      run: pytest 02_devops_fundamentals/ci_cd/terraform-exercise-3/unittests/test.py
+      - name: Py test
+        run: pytest 02_devops_fundamentals/ci_cd/terraform-exercise-3/unittests/test.py
