@@ -18,3 +18,15 @@ jobs:
         env:
           ACADEMY_TYPE: Data
 
+  greet_job:
+    needs: greeting_job
+    runs-on: self-hosted
+    env:
+      DAY: 22
+      MONTH: APRIL
+    steps:
+      - name: "Say 'Hello Data Academy 7th edition, this is $DAY_OF_WEEK 's first exercise! I'm <name>!'"
+        run: echo "Today is $DAY of $MONTH"
+        env:
+          ACADEMY_TYPE: Data
+
