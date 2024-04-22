@@ -30,19 +30,12 @@ jobs:
         env:
           ACADEMY_TYPE: Data
 
-
-
-on: [push]
-  push:
-    branches-ignore: [main]
-jobs:
   checkov-job:
     runs-on: self-hosted
     name: checkov-action
     steps:
       - name: Checkout repo
         uses: actions/checkout@master
-
       - name: Run Checkov action
         id: checkov
         uses: bridgecrewio/checkov-action@master
