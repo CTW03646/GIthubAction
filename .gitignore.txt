@@ -1,0 +1,68 @@
+*.tfstate
+.terraform
+*.lock.hcl
+*.sha256
+*.zip
+*.iml
+.DS_Store
+.idea/
+modules/.DS
+_Store
+.coverage
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+.pytest_cache
+
+#behave tests
+*.feature
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+#Env files
+*.env
+
+### Terraform ###
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+.package/
+
+# Crash log files
+crash.log
+
+
+# ide
+**.venv
+**.vscode
+**.DS_Store
+**.idea**
+**/__pycache__
+**/.pytest*
