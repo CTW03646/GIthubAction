@@ -47,4 +47,4 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Py test
-        run: pytest 02_devops_fundamentals/ci_cd/terraform-exercise-3/unittests/test.py
+        run: pytest ./02_devops_fundamentals/ci_cd/terraform-exercise-3/unittests/test.py
