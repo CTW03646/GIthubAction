@@ -37,7 +37,7 @@ on: [push]
     branches-ignore: [main]
 jobs:
   checkov-job:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     name: checkov-action
     steps:
       - name: Checkout repo
