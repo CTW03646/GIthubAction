@@ -46,5 +46,7 @@ jobs:
   python-test:
     runs-on: self-hosted
     steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
       - name: Py test
         run: pytest 02_devops_fundamentals/ci_cd/terraform-exercise-3/unittests/test.py
